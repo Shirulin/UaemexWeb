@@ -1,0 +1,124 @@
+/* Paleta inspirada en la imagen */
+:root {
+  --green-100: #1f4638;
+  --green-60: #728378;
+  --green-20: #d0d6d3;
+  --gold-100: #a18315;
+  --gold-60: #c7b275;
+  --gold-20: #f2ecdc;
+  --bg-dark: #0e0e0e;
+  --text-light: #f4f4f4;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+header {
+  background: linear-gradient(90deg, var(--green-100), var(--gold-100));
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--gold-60);
+}
+
+section {
+  padding: 3rem 10%;
+}
+
+section h2 {
+  font-size: 1.6rem;
+  border-left: 5px solid var(--gold-100);
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+section h3 {
+  font-size: 1.2rem;
+  color: var(--gold-60);
+  margin-top: 1.5rem;
+}
+
+section p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: var(--green-20);
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.6rem;
+}
+
+/* Conclusiones */
+.conclusion-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.conclusion-list li {
+  background: var(--green-60);
+  color: var(--bg-dark);
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  font-size: 1rem;
+  line-height: 1.4;
+  transition: transform 0.2s ease;
+}
+
+.conclusion-list li:hover {
+  transform: translateY(-5px);
+  background: var(--gold-60);
+}
+
+/* References */
+.reference-list {
+  margin-top: 1.5rem;
+  padding-left: 1rem;
+}
+
+.reference-list li {
+  margin-bottom: 0.8rem;
+  color: var(--green-20);
+}
+
+.reference-list a {
+  color: var(--gold-100);
+  text-decoration: underline;
+}
+
+footer {
+  background-color: var(--green-100);
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--gold-20);
+}
